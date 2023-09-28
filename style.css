@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@400;700&family=Lexend+Deca:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* ## Gradients */
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* background-color: red; */
+    display: flex;
+    box-shadow: 0px 0px 10px var(--Light-slate-blue-background);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .left-box {
+    background-color: hsl(234deg 72.19% 55.24%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.container .left-box h1 {
+    color: var(--White);
+}
+
+.container .left-box .circle {
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(184deg, hsl(238.67deg 91.59% 31.72%) 19%, hsl(234deg 88.72% 59.43% / 30%) 75%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .left-box p {
+    text-align: center;
+    color: var(--Light-lavender);
+    opacity: .8;
+}
+
+.container .left-box h2 {
+    color: var(--White);
+}
+
+.container .left-box h3 {
+    color: var(--Light-lavender);
+}
+
+.container .right-box {
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+.container .right-box h3 {
+    margin-bottom: 1rem;
+}
+
+.container .right-box .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+    margin-bottom: 1rem;
+    padding: .8rem .5rem;
+    border-radius: 10px;
+}
+
+.container .right-box .boxes p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 700;
+}
+
+.button {
+    background: var(--Dark-gray-blue);
+    text-align: center;
+    padding: .5rem 0;
+    color: var(--White);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.button:active {
+    background: var(--Cobalt-blue);
+}
+
+.peq {
+    color: var(--Dark-gray-blue);
+    /* opacity: .9; */
+    font-weight: 700;
+}
+
+.container .right-box .boxes:nth-child(2) {
+    background: hsla(0, 100%, 67%, 0.2);
+}
+
+.container .right-box .boxes:nth-child(3) {
+    background: hsla(0, 100%, 67%, 0.2);
+}
+
+
+
+.container .right-box .boxes:nth-child(4) {
+    background: hsla(166, 100%, 37%, 0.176);
+}
+
+.container .right-box .boxes:nth-child(5) {
+    background: hsla(241, 100%, 89%, 0.189);
+}
+
+.red {
+    color: var(--Light-red);
+}
+
+.green {
+    color: var(--Green-teal);
+}
+
+.blue {
+    color: var(--Dark-gray-blue);
+}
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left-box {
+        background-color: hsl(234deg 72.19% 55.24%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .main {
+        padding: 0 1rem;
+    }
+}
